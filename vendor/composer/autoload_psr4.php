@@ -42,6 +42,7 @@ return array(
     'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
     'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'Symfony\\CS\\' => array($vendorDir . '/fabpot/php-cs-fixer/Symfony/CS'),
+    'Stripe\\' => array($vendorDir . '/stripe/stripe-php/lib'),
     'StaticReview\\' => array($vendorDir . '/sjparkinson/static-review/src'),
     'Seld\\JsonLint\\' => array($vendorDir . '/seld/jsonlint/src/Seld/JsonLint'),
     'Pelago\\' => array($vendorDir . '/pelago/emogrifier/Classes'),
