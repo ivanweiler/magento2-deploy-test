@@ -1,0 +1,1 @@
+/var/www/m2-deploy-dev/lib/web/mage/smart-keyboard-handler.js

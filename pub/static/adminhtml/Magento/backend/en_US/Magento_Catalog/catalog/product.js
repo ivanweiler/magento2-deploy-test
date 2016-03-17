@@ -1,0 +1,1 @@
+/var/www/m2-deploy-dev/vendor/magento/module-catalog/view/adminhtml/web/catalog/product.js
