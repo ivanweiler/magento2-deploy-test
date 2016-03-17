@@ -7,20 +7,20 @@ namespace Magento\Catalog\Api\Data;
 class ProductExtension extends \Magento\Framework\Api\AbstractSimpleObject implements \Magento\Catalog\Api\Data\ProductExtensionInterface
 {
     /**
-     * @return \Magento\Bundle\Api\Data\OptionInterface[]|null
+     * @return \Magento\CatalogInventory\Api\Data\StockItemInterface|null
      */
-    public function getBundleProductOptions()
+    public function getStockItem()
     {
-        return $this->_get('bundle_product_options');
+        return $this->_get('stock_item');
     }
 
     /**
-     * @param \Magento\Bundle\Api\Data\OptionInterface[] $bundleProductOptions
+     * @param \Magento\CatalogInventory\Api\Data\StockItemInterface $stockItem
      * @return $this
      */
-    public function setBundleProductOptions($bundleProductOptions)
+    public function setStockItem($stockItem)
     {
-        $this->setData('bundle_product_options', $bundleProductOptions);
+        $this->setData('stock_item', $stockItem);
         return $this;
     }
 
@@ -62,20 +62,20 @@ class ProductExtension extends \Magento\Framework\Api\AbstractSimpleObject imple
     }
 
     /**
-     * @return \Magento\CatalogInventory\Api\Data\StockItemInterface|null
+     * @return \Magento\Bundle\Api\Data\OptionInterface[]|null
      */
-    public function getStockItem()
+    public function getBundleProductOptions()
     {
-        return $this->_get('stock_item');
+        return $this->_get('bundle_product_options');
     }
 
     /**
-     * @param \Magento\CatalogInventory\Api\Data\StockItemInterface $stockItem
+     * @param \Magento\Bundle\Api\Data\OptionInterface[] $bundleProductOptions
      * @return $this
      */
-    public function setStockItem($stockItem)
+    public function setBundleProductOptions($bundleProductOptions)
     {
-        $this->setData('stock_item', $stockItem);
+        $this->setData('bundle_product_options', $bundleProductOptions);
         return $this;
     }
 
