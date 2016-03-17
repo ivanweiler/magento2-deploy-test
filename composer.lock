@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "894a0a994f6b64409754735f68f5b71d",
+    "hash": "0e1ed48792049ce22354420406ad5153",
+    "content-hash": "8f00b63e55180e5a0399b4f111c878c4",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -118,6 +119,32 @@
                 "package"
             ],
             "time": "2015-04-14 21:18:51"
+        },
+        {
+            "name": "inchoo/stripe",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Inchoo/magento2-Inchoo_Stripe.git",
+                "reference": "8f1178ec464e0b46653e9d5d4b31e18839afb467"
+            },
+            "require": {
+                "stripe/stripe-php": "2.*"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "map": [
+                    [
+                        "*",
+                        "Inchoo/Stripe"
+                    ]
+                ]
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Stripe integration for Magento 2",
+            "time": "2016-02-03 14:28:13"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -5227,6 +5254,61 @@
             "time": "2015-11-21 02:21:41"
         },
         {
+            "name": "stripe/stripe-php",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "9d76444550a09a6f9c55dd98113ba0901908e60a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/9d76444550a09a6f9c55dd98113ba0901908e60a",
+                "reference": "9d76444550a09a6f9c55dd98113ba0901908e60a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6.1",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2015-07-07 01:13:32"
+        },
+        {
             "name": "symfony/console",
             "version": "v2.6.13",
             "target-dir": "Symfony/Component/Console",
@@ -5403,7 +5485,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/6f1979c3b0f4c22c77a8a8971afaa7dd07f082ac",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d9d21cfcc3e202ee34777d6da38897695d4d208d",
                 "reference": "6f1979c3b0f4c22c77a8a8971afaa7dd07f082ac",
                 "shasum": ""
             },
@@ -8188,7 +8270,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/41ee6c70758f40fa1dbf90d019ae0a66c4a09e74",
+                "url": "https://api.github.com/repos/symfony/config/zipball/ee4cdda66aff834c8125e8f2c15932461667c521",
                 "reference": "41ee6c70758f40fa1dbf90d019ae0a66c4a09e74",
                 "shasum": ""
             },
@@ -8442,6 +8524,7 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "composer/composer": 15,
+        "inchoo/stripe": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": true,
